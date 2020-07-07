@@ -91,12 +91,12 @@ btn17 = Button(window, text='clear ', bd='10', font=('areal', 20, 'bold'), heigh
 btn18 = Button(window, text='Square', bd='10', font=('areal', 20, 'bold'), height=2, width=5, bg="#213f42",
                activebackground="gray", activeforeground="red", fg="#97c0c4", relief="groove",
                command=square)
-btn19 = Button(window, text='00', bd='10', font=('areal', 20, 'bold'), height=2, width=5, bg="#213f42",
+btn19 = Button(window, text='(', bd='10', font=('areal', 20, 'bold'), height=2, width=5, bg="#213f42",
                activebackground="gray", activeforeground="red", fg="#97c0c4", relief="groove",
-               command=lambda: enter('00'))
-btn20 = Button(window, text='cal', bd='10', font=('areal', 20, 'bold'), height=2, width=5, bg="#213f42",
+               command=lambda: enter('('))
+btn20 = Button(window, text=')', bd='10', font=('areal', 20, 'bold'), height=2, width=5, bg="#213f42",
                activebackground="gray", activeforeground="red", fg="#97c0c4", relief="groove",
-               command=lambda: enter('00'))
+               command=lambda: enter(')'))
 btn1.grid(row=1, column=1, )
 btn2.grid(row=1, column=2, )
 btn3.grid(row=1, column=3, )
@@ -111,11 +111,12 @@ btn11.grid(row=3, column=3, )
 btn12.grid(row=3, column=4, )
 btn13.grid(row=4, column=1, )
 btn14.grid(row=4, column=2, )
-btn15.grid(row=5, column=3, )
+btn15.grid(row=4, column=3, )
 btn16.grid(row=4, column=4, )
 btn17.grid(row=5, column=1, )
 btn18.grid(row=5, column=4, )
-btn19.grid(row=4, column=3, )
-btn20.grid(row=5, column=2, )
+btn19.grid(row=5, column=2, )
+btn20.grid(row=5, column=3, )
+
 
 window.mainloop()
